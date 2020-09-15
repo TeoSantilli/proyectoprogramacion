@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 body{
     margin: 0;
 }
 header{
-    background-color: rgb(26, 10, 10);
+    background-color: rgb(10, 10, 10);
 }
 #btn-menu{
     display: none;
@@ -31,6 +32,7 @@ header label :hover{
 }
 .titulo{
     display: block;
+    padding-top: 25px;
     padding-right: 50px;
     padding-left: 10px;
     color: white;
@@ -46,7 +48,7 @@ header label :hover{
 }
 
 .menu li:hover{
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
 }
 .menu li a{
     display: block;
@@ -54,6 +56,43 @@ header label :hover{
     color: white;
     text-decoration: none;
 }
+
+
+.medio{
+    padding-left: 100px ;
+    padding-right: 100px;
+    background: rgb(34, 32, 32);
+}
+.peliculas{
+    padding-top: 50px;
+    color: white;
+}
+.peliculas1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+.peliculas1 img{
+    width: 160px;
+    height: 240px;
+}
+.peliculas1 a{
+    text-decoration: none;
+
+}
+.peliculas1 h3{
+    text-align: center;
+    color: white;
+}
+.peliculas1 a  :hover{
+    color: rgb(18, 59, 59);
+}
+
+
+
 
 
 
@@ -69,7 +108,7 @@ header label :hover{
     }
     .menu{
         position: absolute;
-        background-color: rgb(26, 10, 10);
+        background-color: rgb(10, 10, 10);
         width: 60%;
         margin-left: -60%;
     }
