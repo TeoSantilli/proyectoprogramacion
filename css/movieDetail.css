@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 2px;
+}
+body{
+    margin: 0;
+    background: rgb(34, 32, 32);
+}
+header{
+    background-color: rgb(10, 10, 10);
+}
+#btn-menu{
+    display: none;
+}
+header label img{
+    display: none;
+    width: 50px;
+    padding: 10px;
+    border-right:1px solid white;
+}
+header label :hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3)
+}
+.logo{
+    display: flex;
+    display: block;
+    width: 10%;
+}
+.logo img{
+    width: 70%;
+    height: 100%;
+}.titulo{
+    display: block;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 10px;
+    color: white;
+}.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li:hover{
+    background: rgba(0,0,0,0.4);
+}
+.menu li a{
+    display: block;
+    padding: 25px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 5px;
+}
+.imgAvengers{
+    width: 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+.titulo{
+    color: rgb(234, 245, 255); 
+    text-decoration: underline; 
+}
+.info{
+    display: grid;
+    grid-template-rows: auto;
+}
+.infoAven{
+    color: rgb(234, 245, 255);
+    font-size: 15px;
+}
+.configPeli{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(234, 245, 255);
+
+}
