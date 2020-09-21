@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 2px;
+    margin: 0;
 }
 body{
     margin: 0;
@@ -30,18 +30,24 @@ header label :hover{
 .logo img{
     width: 70%;
     height: 100%;
-}.titulo{
+}
+.titulo{
     display: block;
     padding-top: 25px;
     padding-right: 50px;
     padding-left: 10px;
     color: white;
-}.menu ul{
+}
+.menu{
+    width: 90%;
+}
+.menu ul{
     margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
 }
+
 .menu li:hover{
     background: rgba(0,0,0,0.4);
 }
@@ -52,9 +58,10 @@ header label :hover{
     text-decoration: none;
 }
 
+
 .container{
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 20% 35% 45%;
     gap: 5px;
 }
 .imgAvengers{
@@ -62,7 +69,7 @@ header label :hover{
     padding: 10px;
     object-fit: cover;
 }
-.titulo{
+.tituloPeli{
     color: rgb(234, 245, 255); 
     text-decoration: underline; 
 }
@@ -71,12 +78,47 @@ header label :hover{
     grid-template-rows: auto;
 }
 .infoAven{
-    color: rgb(234, 245, 255);
+    color: rgb(153, 157, 160);
     font-size: 15px;
+}
+.infoAven2{
+    color: white;
+}
+.estrellas{
+    color: gold;
 }
 .configPeli{
     display: flex;
     justify-content: space-between;
     color: rgb(234, 245, 255);
+}
 
+
+
+@media (max-width: 768px){
+    header label img{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .titulo{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        background-color: rgb(10, 10, 10);
+        width: 60%;
+        margin-left: -60%;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid white;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+
+    }
 }
