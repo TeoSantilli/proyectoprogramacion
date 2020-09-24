@@ -1,62 +1,69 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 body{
     margin: 0;
     background: rgb(34, 32, 32);
 }
-header{
-    background-color: rgb(10, 10, 10);
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
 }
-#btn-menu{
-    display: none;
-}
-header label img{
-    display: none;
-    width: 50px;
-    padding: 10px;
-    border-right:1px solid white;
-}
-header label :hover{
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.3)
+.innerHeader{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 .logo{
-    display: flex;
-    display: block;
-    width: 10%;
+    height: 100%;
+    display: table;
+    float: left;
 }
-.logo img{
-    width: 70%;
+.logo h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.logo h1 span{
+    font-weight: 800;
+}
+.nav{
+    float: right;
     height: 100%;
 }
-.titulo{
-    display: block;
-    padding-top: 25px;
-    padding-right: 50px;
-    padding-left: 10px;
+.nav a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+}
+.nav a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
-.menu{
-    width: 90%;
-}
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
+.nav input{
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.menu li:hover{
-    background: rgba(0,0,0,0.4);
-}
-.menu li a{
-    display: block;
-    padding: 25px 20px;
-    color: white;
-    text-decoration: none;
-}
 
 /*-----------Slider-------------*/
 
@@ -116,6 +123,7 @@ header label :hover{
 .peliculas1 img{
     width: 160px;
     height: 240px;
+    border-radius: 7px;
 }
 .peliculas1 a{
     text-decoration: none;
@@ -126,7 +134,7 @@ header label :hover{
     color: white;
 }
 .peliculas1 a  :hover{
-    color: rgb(18, 59, 59);
+    color:rgb(153, 157, 160);
 }
 
 
