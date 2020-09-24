@@ -21,46 +21,33 @@ body{
     height: 100%;
     display: block;
     margin: 0 auto;
-}
-.logo{
-    height: 100%;
-    display: table;
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo h1{
     color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
     font-size: 32px;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
-
 }
 .logo h1 span{
     font-weight: 800;
 }
 .nav{
-    float: right;
-    height: 100%;
+    display: flex;    
 }
 .nav a{
-    height: 100%;
-    display: table;
-    float: left;
     padding: 0 20px;
 }
+.nav a li:hover{
+    color: rgb(153, 157, 160);
+}
 .nav a li{
-    display: table-cell;
-    vertical-align: middle;
     height: 100%;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-}
-.nav input{
-    display: table-cell;
-    vertical-align: middle;
 }
 
 
@@ -69,6 +56,7 @@ body{
     grid-template-columns: 20% 35% 45%;
     gap: 5px;
     margin-top: 15px;
+    margin-left: 80px;
 }
 .imgAvengers{
     width: 100%;
@@ -83,6 +71,7 @@ body{
 .info{
     display: grid;
     grid-template-rows: auto;
+    padding: 20px;
 }
 .infoAven{
     color: rgb(153, 157, 160);
@@ -101,36 +90,19 @@ body{
 }
 .trailer{
     position: relative;
-    top: 20%;
-    left: 10%;
+    top: 70px;
+    left: 70px;
 }
 
 
 
 @media (max-width: 768px){
-    header label img{
-        display: block;
+    .header{
+        height: 140px;
     }
-    .logo{
-        display: none;
-    }
-    .titulo{
-        display: none;
-    }
-    .menu{
-        position: absolute;
-        background-color: rgb(10, 10, 10);
-        width: 60%;
-        margin-left: -60%;
-    }
-    .menu ul {
+    .innerHeader{
         flex-direction: column;
-    }
-    .menu li{
-        border-top: 1px solid white;
-    }
-    #btn-menu:checked ~ .menu{
-        margin: 0;
-
+        justify-content: space-evenly;
+        text-align: center;
     }
 }
