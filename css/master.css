@@ -12,7 +12,7 @@ body{
 
 .header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: block;
     background-color: #101010;
 }
@@ -54,7 +54,7 @@ body{
 /*-----------Slider-------------*/
 
 .slider{
-    width: 95%;
+    width: 100%;
     display: block;
     margin: auto;
     overflow: hidden;
@@ -67,12 +67,12 @@ body{
 }
 .slider li{
     width: 100%;
-    height: 500px;
+    height: 700px;
     list-style: none;
 }
 .slider img{
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
 @keyframes cambio {
     0% {margin-left: 0; }
@@ -91,9 +91,8 @@ body{
 
 
 .medio{
-    padding-left: 100px ;
-    padding-right: 100px;
     background: rgb(34, 32, 32);
+    margin: 0  50px 50px 50px;
 }
 .peliculas{
     padding-top: 50px;
@@ -107,9 +106,9 @@ body{
     padding-top: 10px;
 }
 .peliculas1 img{
-    width: 160px;
-    height: 240px;
-    border-radius: 7px;
+    width: 240px;
+    height: 320px;
+    border-radius: 15px;
 }
 .peliculas1 a{
     text-decoration: none;
@@ -118,12 +117,34 @@ body{
 .peliculas1 h3{
     text-align: center;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 .peliculas1 a  :hover{
     color:rgb(153, 157, 160);
 }
+.categoria{
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
 
 
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #101010;
+}
+.innerFooter{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
@@ -139,5 +160,14 @@ body{
     }
     .slider{
         display: none;
+    }
+    .peliculas1{
+        justify-content: space-around;
+        gap: 5px;
+    }
+    .peliculas1 img{
+        width: 160px;
+        height: 240px;
+        border-radius: 15px;
     }
 }
