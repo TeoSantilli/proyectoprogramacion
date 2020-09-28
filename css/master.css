@@ -15,6 +15,7 @@ body{
     height: 100px;
     display: block;
     background-color: #101010;
+    position: fixed;
 }
 .innerHeader{
     width: 90%;
@@ -48,6 +49,10 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+}
+.bloque{
+    height: 100px;
+    background-color: black;
 }
 
 
@@ -110,6 +115,9 @@ body{
     height: 320px;
     border-radius: 15px;
 }
+.peliculas1 img:hover{
+    opacity: 0.5;
+}
 .peliculas1 a{
     text-decoration: none;
 
@@ -162,7 +170,7 @@ body{
         display: none;
     }
     .peliculas1{
-        justify-content: space-around;
+        justify-content: flex-start;
         gap: 5px;
     }
     .peliculas1 img{
@@ -170,4 +178,8 @@ body{
         height: 240px;
         border-radius: 15px;
     }
+}
+
+@media (max-width: 420px){
+    
 }
