@@ -65,6 +65,7 @@ body{
 .generos h1{
     color: white;
     font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
 }
 .tipo{
     display: flex;
@@ -105,4 +106,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .header{
+        height: 140px;
+    }
+    .innerHeader{
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .tipo img{
+        width: 150px;
+        height: 150px;
+    }
+    .tipo{
+    }
 }
