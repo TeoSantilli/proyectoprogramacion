@@ -114,6 +114,18 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.redesSociales{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    gap: 15px;
+}
+.redesSociales h2{
+    font-weight: 200;
+    font-size: 18px;
+}
+.redesSociales a{
+    color: white;
+}
 
 
 
