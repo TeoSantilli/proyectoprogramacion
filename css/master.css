@@ -132,6 +132,7 @@ body{
     color:rgb(153, 157, 160);
 }
 .categoria{
+    margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
 }
@@ -181,5 +182,18 @@ body{
 }
 
 @media (max-width: 420px){
-    
+    .peliculas1{
+        gap: 15px;
+    }
+    .categoria{
+        font-size: 16px;
+    }
+    .peliculas1 img{
+        width: 130px;
+        height: 160px;
+        border-radius: 10px;
+    }
+    .peliculas1 h3{
+        font-size: 12px;
+    }
 }

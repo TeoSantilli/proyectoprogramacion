@@ -52,8 +52,6 @@ body{
 
 
 .container{
-    /* display: grid;
-    grid-template-columns: 20% 35% 45%; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -75,6 +73,7 @@ body{
 .tituloPeli{
     color: rgb(234, 245, 255); 
     text-decoration: underline; 
+    font-size: 24px;
 }
 .info{
     width: 50%;
@@ -82,10 +81,11 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 .infoAven{
     color: rgb(153, 157, 160);
-    font-size: 15px;
+    font-size: 14px;
 }
 .infoAven2{
     color: white;
@@ -93,16 +93,12 @@ body{
 .estrellas{
     color: gold;
 }
-.configPeli{
-    display: flex;
-    justify-content: space-between;
-    color: rgb(234, 245, 255);
-}
 .trailer{
-    /* width: 35%; */
     display: flex;
     justify-content: space-around;
 }
+
+
 .footer{
     width: 100%;
     height: 100px;
@@ -144,5 +140,11 @@ body{
     }
     .trailer{
         width: 90%;
+    }
+}
+
+@media (max-width: 420px){
+    .trailer{
+        width: 100%;
     }
 }

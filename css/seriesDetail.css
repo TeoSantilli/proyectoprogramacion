@@ -15,7 +15,6 @@ body{
     height: 100px;
     display: block;
     background-color: #101010;
-    position: fixed;
 }
 .innerHeader{
     width: 90%;
@@ -50,53 +49,67 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
-.bloque{
-    height: 100px;
-    background-color: black;
-}
 
-
-.generos{
+.container{
     display: flex;
-    flex-direction: column;
-    margin: 50px;
-    gap: 15px;
-}
-.generos h1{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-}
-.tipo{
-    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 100px;
 }
-.tipo a{
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-}
-.tipo h3:hover{
-    color:rgb(153, 157, 160);
-}
-.tipo img{
-    width:250px;
-    height: 250px;
+.imgGot{
+    width: 270px;
     border-radius: 15px;
 }
-.tipo img:hover{
-    opacity: 0.5;
+.imgGot img {
+    width: 100%;
 }
-
-
+.estado{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+.num{
+    color: gold;
+}
+.tituloSerie{
+    color: rgb(234, 245, 255); 
+    text-decoration: underline; 
+    font-size: 24px;
+}
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.infoGot{
+    color: rgb(153, 157, 160);
+    font-size: 14px;
+}
+.infoGot2{
+    color: white;
+}
+.estrellas{
+    color: gold;
+}
+.trailer{
+    display: flex;
+    justify-content: space-around;
+}
 
 .footer{
     width: 100%;
     height: 100px;
     display: block;
-    background-color: #101010;  
+    background-color: #101010;
 }
 .innerFooter{
     width: 90%;
@@ -109,9 +122,6 @@ body{
 }
 
 
-
-
-
 @media (max-width: 768px){
     .header{
         height: 140px;
@@ -121,11 +131,25 @@ body{
         justify-content: space-evenly;
         text-align: center;
     }
-    .tipo img{
-        width: 150px;
-        height: 150px;
+    .container{
+        flex-direction: column;
+        margin: 0;
+        margin-top: 30px;
     }
-    .tipo{
+    .imgGot{
+        width: 270px;
         
+    }
+    .info{
+        width: 90%;
+    }
+    .trailer{
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px){
+    .trailer{
+        width: 100%;
     }
 }
