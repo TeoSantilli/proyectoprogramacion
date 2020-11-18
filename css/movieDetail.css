@@ -10,6 +10,7 @@ body{
     background: rgb(34, 32, 32);
 }
 
+
 .header{
     width: 100%;
     height: 100px;
@@ -62,11 +63,11 @@ body{
     margin-left: 40px;
     margin-bottom: 100px;
 }
-.imgAvengers{
+.imgPeli{
     width: 270px;
     border-radius: 15px;
 }
-.imgAvengers img {
+.imgPeli img {
     width: 100%;
 }
 
@@ -75,7 +76,7 @@ body{
     text-decoration: underline; 
     font-size: 24px;
 }
-.info{
+.infoContainer{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -83,14 +84,14 @@ body{
     gap: 15px;
     font-family: 'Montserrat', sans-serif;
 }
-.infoAven{
+.info{
     color: rgb(153, 157, 160);
     font-size: 14px;
 }
-.infoAven2{
+.info2{
     color: white;
 }
-.estrellas{
+.calificacion{
     color: gold;
 }
 .trailer{
