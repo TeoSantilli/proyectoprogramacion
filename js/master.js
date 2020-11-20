@@ -28,7 +28,7 @@ window.addEventListener('load', function(){
         return respuesta.json()
     })
     .then(function(populares){
-        console.log(populares);
+        //console.log(populares);
         populares.results.forEach(pelicula => {
             let articulo = document.createElement('article')
             articulo.innerHTML += `<a href="movieDetail.html?id=${pelicula.id}&titulo=${pelicula.title}&imagen=${pelicula.poster_path}&overview=${pelicula.overview}&calificacion=${pelicula.vote_average}&genero=${pelicula.genre_ids}&fecha=${pelicula.release_date}" > <img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt ='${pelicula.title}'/> </a>` 
@@ -52,7 +52,7 @@ window.addEventListener('load', function(){
         return respuesta.json()
     })
     .then(function(estreno){
-        console.log(estreno);
+        //console.log(estreno);
         estreno.results.forEach(pelicula => {
             let articulo = document.createElement('article')
             articulo.innerHTML += `<a href="movieDetail.html?id=${pelicula.id}&titulo=${pelicula.title}&imagen=${pelicula.poster_path}&overview=${pelicula.overview}&calificacion=${pelicula.vote_average}&genero=${pelicula.genre_ids}&fecha=${pelicula.release_date}"> <img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt ='${pelicula.title}'/> </a>` 
@@ -77,8 +77,9 @@ window.addEventListener('load', function(){
     .then(function(populares){
         console.log(populares);
         populares.results.forEach(series => {
+            //console.log(series);
             let articulo = document.createElement('article')
-            articulo.innerHTML += `<a href=""> <img src='https://image.tmdb.org/t/p/w500${series.poster_path}' alt ='${series.name}'/> </a>` 
+            articulo.innerHTML += `<a href="seriesDetail.html?id=${series.id}&titulo=${series.name}&imagen=${series.poster_path}&overview=${series.overview}&calificacion=${series.vote_average}&genero=${series.genre_ids}&fecha=${series.first_air_date}"> <img src='https://image.tmdb.org/t/p/w500${series.poster_path}' alt ='${series.name}'/> </a>` 
 
             seriesPop.append(articulo)
 

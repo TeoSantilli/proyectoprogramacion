@@ -11,7 +11,7 @@ window.addEventListener('load',function(){
     let genero = document.querySelector('.generos')
     let actores = document.querySelector('.actores')
     let trailer = document.querySelector('.trailer')
-
+    let title = document.querySelector('title')
 
 
     let detallePelicula = location.search
@@ -29,6 +29,7 @@ window.addEventListener('load',function(){
 
     //Detalles
 
+    title.innerHTML = `Ver ${titulo}`
     imgPeli.innerHTML = `<img src='https://image.tmdb.org/t/p/w500${imagen}' alt ='${titulo}'/>`
     tituloPeli.innerHTML = `${titulo}`
     detalles.innerHTML =  `${fecha} `

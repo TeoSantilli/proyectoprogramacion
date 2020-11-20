@@ -50,6 +50,10 @@ body{
     font-size: 16px;
 }
 
+
+
+
+
 .container{
     display: flex;
     flex-direction: row;
@@ -61,14 +65,12 @@ body{
     margin-left: 40px;
     margin-bottom: 100px;
 }
-.imgGot{
+.imgSerie{
     width: 270px;
     border-radius: 15px;
 }
-.imgGot img {
+.imgSerie img {
     width: 100%;
-}
-.estado{
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -82,7 +84,7 @@ body{
     text-decoration: underline; 
     font-size: 24px;
 }
-.info{
+.infoContainer{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -90,20 +92,26 @@ body{
     gap: 15px;
     font-family: 'Montserrat', sans-serif;
 }
-.infoGot{
+.info{
     color: rgb(153, 157, 160);
     font-size: 14px;
 }
-.infoGot2{
+.info2{
     color: white;
 }
-.estrellas{
+.calificacion{
     color: gold;
 }
 .trailer{
     display: flex;
     justify-content: space-around;
 }
+
+
+
+
+
+
 
 .footer{
     width: 100%;

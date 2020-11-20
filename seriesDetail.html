@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver Juego de Tronos</title>
+    <title></title>
     <link rel="stylesheet" href="css/seriesDetail.css">
     <link rel="stylesheet" href="css/headerFooter.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
@@ -26,42 +26,57 @@
                     <a href="">
                         <li>Series</li>
                     </a>
-                    <a href="">
-                        <li>Entrar</li>
-                    </a>
+                    
+                    <form action="resultadosBusqueda.html" method="GET">
+                        <input type="text" name="query" placeholder=" Search...">
+                    </form>
+                    
                 </ul>
             </div>
         </header>
+        <div class="bloque"></div>
+
+
+
+
 
         <section class="container">
-            <article class="estado">
-                <img src="img/cartelera/series/gameofthrones.jpg" class="imgGot" alt="Game of Thrones">
-                <h4><span class="num">8</span> Temporadas</h4>
-                <h4><span class="num">74</span> Episodios</h4>
+            <article class="imgSerie">
+                <!-- <img src="" class="" alt="">
+                <h4><span class="num temporadas">8</span> Temporadas</h4>
+                <h4><span class="num capitulos">74</span> Episodios</h4> -->
             </article>
 
-            <article class="info">
-                <h2 class="tituloSerie">Juego de Tronos</h2>
+            <article class="infoContainer">
+                <h2 class="tituloSerie"></h2>
             
-                <div class="estrellas">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    (8.4)
+                <div class="calificacion">
+                
                 </div>
-                <h3 class="infoGot"> 2011</h3>
-                <h3 class="infoGot">Juego de Tronos es una serie de televisión de drama y fantasía creada para la HBO por David Benioff y D. B. Weiss. Es una adaptación de la saga de novelas de fantasía Canción de Hielo y Fuego de George R. R. Martin. La primera de las novelas es la que da nombre a la serie.</h3>
-                <h3 class="infoGot">Director: <span class="infoGot2"> D. B. Weiss, David Benioff</span></h3>
-                <h3 class="infoGot">Genero: <span class="infoGot2"> Action / Adventure / Drama / Ciencia Ficcion / Fantasia</span></h3>
-                <h3 class="infoGot">Actores: <span class="infoGot2"> Ben Crompton, Carice van Houten, Conleth Hill, Daniel Portman, Emilia Clarke, Gwendoline Christie, Hafþór Júlíus Björnsson, Hannah Murray, Iain Glen, Isaac Hempstead-Wright, Jacob Anderson, Jerome Flynn, Joe Dempsie, John Bradley.</span></h3>
+
+                <h3 class="info fecha"></h3>
+
+                <h3 class="info overview"></h3>
+
+                <h3 class="info">Creador: <span class="info2 director"></span></h3>
+                <h3 class="info">Genero: <span class="info2 generos"></span></h3>
+
+                <h3 class="info">Actores: <span class="info2 actores"></span></h3>
+
             </article>
             
             <article class="trailer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kDIlADvnC_s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
             </article>
         </section>
+
+        
+
+
+
+
+
+
 
         <footer class="footer">
             <div class="innerFooter">
@@ -94,6 +109,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/seriesDetail.js"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>

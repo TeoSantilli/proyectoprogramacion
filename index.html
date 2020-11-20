@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineFlix</title>
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/headerFooter.css">
+    <!-- <link rel="stylesheet" href="css/uikit.min.css" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap" rel="stylesheet">
     
@@ -27,9 +27,11 @@
                     <a href="">
                         <li>Series</li>
                     </a>
-                    <a href="">
-                        <li>Entrar</li>
-                    </a>
+                    
+                    <form action="resultadosBusqueda.html" method="GET">
+                        <input type="text" name="query" placeholder=" Search...">
+                    </form>
+                    
                 </ul>
             </div>
         </header>
@@ -45,7 +47,7 @@
 
 
 
-        <section>
+        <section class="contenido">
             <!-- Peliculas Populares -->
 
             <section class="medio">
@@ -82,8 +84,9 @@
                 </section>
             </section>
             
-
         </section>
+
+        <!-- Footer -->
 
         <footer class="footer">
             <div class="innerFooter">
@@ -115,6 +118,9 @@
             </div>
         </footer>
     </main>
+
+
+
     <script src="js/master.js"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
