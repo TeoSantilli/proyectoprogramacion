@@ -107,9 +107,36 @@ body{
     justify-content: space-around;
 }
 
-
-
-
+.containerReviews{
+    margin-right: 50px;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reseñas{
+    display: flex;
+    gap: 15px;
+}
+.tituloReviews{
+    color: rgb(153, 157, 160);
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px; 
+}
+.reviews img{
+    width: 64px;
+    height: 64px;
+}
+.reviews h3{
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.reviews span{
+    font-size: 12px;
+}
 
 
 
@@ -142,33 +169,65 @@ body{
 }
 
 
+
+
 @media (max-width: 768px){
+    /*Header*/
     .header{
-        height: 140px;
+        height: 180px;
+        position: static;
     }
     .innerHeader{
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
+        
     }
+    .logo{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .nav{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .slider{
+        display: none;
+    }
+    .bloque{
+        display: none;
+    }
+    /*Contenido*/
     .container{
         flex-direction: column;
         margin: 0;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
-    .imgGot{
-        width: 270px;
-        
-    }
-    .info{
+    .infoContainer{
         width: 90%;
     }
     .trailer{
         width: 90%;
     }
+    /*Footer*/
+    .footer{
+        height: 140px;
+    }
+    .innerFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .redesSociales{
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 420px){
+    .imgSerie{
+        width: 240px;
+    }
     .trailer{
         width: 100%;
     }

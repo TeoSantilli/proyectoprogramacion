@@ -55,6 +55,7 @@ body{
 }
 .bloque{
     height: 100px;
+    display: block;
     background-color: black;
 }
 
@@ -196,41 +197,89 @@ body{
 /* Responsive */
 
 @media (max-width: 768px){
+    /*Header*/
     .header{
-        height: 140px;
+        height: 180px;
+        position: static;
     }
     .innerHeader{
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
+        
+    }
+    .logo{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .nav{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
     }
     .slider{
         display: none;
     }
-    .peliculas1{
-        justify-content: flex-start;
-        gap: 5px;
+    .bloque{
+        display: none;
     }
-    .peliculas1 img{
+    /*Contenido*/
+    .peliculasPop{
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .peliculasEst{
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .seriesPop{
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .peliculasPop img{
         width: 160px;
-        height: 240px;
+        height: 266px;
         border-radius: 15px;
     }
+    .peliculasEst img{
+        width: 160px;
+        height: 266px;
+        border-radius: 15px;
+    }
+    .seriesPop img{
+        width: 160px;
+        height: 266px;
+        border-radius: 15px;
+    }
+    /*Footer*/
+    .footer{
+        height: 140px;
+    }
+    .innerFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .redesSociales{
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 420px){
-    .peliculas1{
-        gap: 15px;
+    .peliculasPop{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 75px;
     }
-    .categoria{
-        font-size: 16px;
+    .peliculasEst{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 75px;
     }
-    .peliculas1 img{
-        width: 130px;
-        height: 160px;
-        border-radius: 10px;
+    .seriesPop{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 75px;
     }
-    .peliculas1 h3{
-        font-size: 12px;
-    }
+    
 }

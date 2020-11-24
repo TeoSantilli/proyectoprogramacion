@@ -72,36 +72,56 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-.imgResultado{
+.categoria{
+    font-size: 23px;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.peliculas{
     width: 100%;
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
 }
-.imgResultado h3{
+.series{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.peliculas h3{
     width: 250px;
 }
-.imgResultado img {
+.peliculas img {
     width: 250px;
     height: 375px;
     border-radius: 15px;
 }
-
+.series h3{
+    width: 250px;
+}
+.series img {
+    width: 250px;
+    height: 375px;
+    border-radius: 15px;
+}
 .container a  :hover{
     color:rgb(153, 157, 160);
 }
-.imgResultado img:hover{
+.peliculas img:hover{
     opacity: 0.5;
 }
-
-
-
+.series img:hover{
+    opacity: 0.5;
+}
 
 .footer{
     width: 100%;
     height: 100px;
     display: block;
-    background-color: #101010;  
+    background-color: #101010;
 }
 .innerFooter{
     width: 90%;
@@ -125,3 +145,78 @@ body{
     color: white;
 }
 
+
+
+/* Responsive */
+
+@media (max-width: 768px){
+    /*Header*/
+    .header{
+        height: 180px;
+        position: static;
+    }
+    .innerHeader{
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        
+    }
+    .logo{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .nav{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .slider{
+        display: none;
+    }
+    .bloque{
+        display: none;
+    }
+    /*Contenido*/
+    .peliculas h3{
+        width: 200px;
+    }
+    .peliculas img {
+        width: 200px;
+        height: 325px;
+        border-radius: 15px;
+    }
+    .series h3{
+        width: 200px;
+    }
+    .series img {
+        width: 200px;
+        height: 325px;
+        border-radius: 15px;
+    }
+    /*Footer*/
+    .footer{
+        height: 140px;
+    }
+    .innerFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .redesSociales{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 420px){
+    .peliculas{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 65px;
+    }
+    .series{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 65px;
+    }
+    
+}

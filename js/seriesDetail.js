@@ -10,6 +10,7 @@ window.addEventListener('load',function(){
     let actores = document.querySelector('.actores')
     let trailer = document.querySelector('.trailer')
     let title = document.querySelector('title')
+    let review = document.querySelector('.reviews')
 
     let detalleSerie = location.search
     let detalleSerieObjeto = new URLSearchParams(detalleSerie)
@@ -80,6 +81,28 @@ window.addEventListener('load',function(){
         console.log(video);
         trailer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${video.results[0].key}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
+    })
+
+    .catch(function(error){
+        console.log(error);
+    })
+
+
+    //Reviews
+
+    fetch(`https://api.themoviedb.org/3/tv/${id}/reviews?api_key=070e5651f364e262a772d24963f099f2&language=en-US&language=en-US&page=1`)
+    .then(function(respuesta){
+        return respuesta.json()
+    })
+    .then(function(reviews){
+        console.log(reviews);
+        reviews.results.forEach(reseña=>{
+            review.innerHTML += `<div class="reseñas">
+            <img src='https://image.tmdb.org/t/p/original${reseña.author_details.avatar_path}' alt ='avatar no disponible'/>
+            <h3>${reseña.author} <br> <span>${reseña.content}</span></h3>
+            </div>
+            `
+        })
     })
 
     .catch(function(error){

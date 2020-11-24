@@ -1,7 +1,7 @@
 window.addEventListener('load',function(){
 
-    let tituloResult = document.querySelector('.tituloResultado')
-    let imgResult = document.querySelector('.imgResultado')
+    let peliculas = document.querySelector('.peliculas')
+    let series = document.querySelector('.series')
 
     buscadorQuery = location.search
     buscadorQueryObj = new URLSearchParams(buscadorQuery)
@@ -24,14 +24,14 @@ window.addEventListener('load',function(){
 
             //let articulo = document.createElement('article')
             if(buscador.media_type == 'tv'){
-                imgResult.innerHTML += `<a href="seriesDetail.html?id=${buscador.id}&titulo=${buscador.name}&imagen=${buscador.poster_path}&overview=${buscador.overview}&calificacion=${buscador.vote_average}&genero=${buscador.genre_ids}&fecha=${buscador.first_air_date}">
+                series.innerHTML += `<a href="seriesDetail.html?id=${buscador.id}&titulo=${buscador.name}&imagen=${buscador.poster_path}&overview=${buscador.overview}&calificacion=${buscador.vote_average}&genero=${buscador.genre_ids}&fecha=${buscador.first_air_date}">
                 <img src='https://image.tmdb.org/t/p/w500${buscador.poster_path}' alt ='${buscador.name}'/> 
                 <h3 class="titulo">${buscador.name}</h3>
                 </a>`
 
             }
             if(buscador.media_type == 'movie'){
-                imgResult.innerHTML += `<a href="movieDetail.html?id=${buscador.id}&titulo=${buscador.title}&imagen=${buscador.poster_path}&overview=${buscador.overview}&calificacion=${buscador.vote_average}&genero=${buscador.genre_ids}&fecha=${buscador.release_date}"> <img src='https://image.tmdb.org/t/p/w500${buscador.poster_path}' alt ='${buscador.title}'/>
+                peliculas.innerHTML += `<a href="movieDetail.html?id=${buscador.id}&titulo=${buscador.title}&imagen=${buscador.poster_path}&overview=${buscador.overview}&calificacion=${buscador.vote_average}&genero=${buscador.genre_ids}&fecha=${buscador.release_date}"> <img src='https://image.tmdb.org/t/p/w500${buscador.poster_path}' alt ='${buscador.title}'/>
                 <h3 class="titulo">${buscador.title}</h3>
                 </a>`
             }
