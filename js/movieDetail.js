@@ -81,6 +81,42 @@ window.addEventListener('load',function(){
         console.log(error);
     })
 
+    //Favoritos
+    let recuperoStorage = localStorage.getItem("favoritos");
+
+    if (recuperoStorage == null ){
+        favoritos=[];
+    }
+    else {
+        favoritos=JSON.parse(recuperoStorage);
+    }
+
+    let boton = document.querySelector(".botonFavoritos")
+
+    if (favoritos.includes(id)){
+        boton.innerHTML="Quitar de favoritos"
+    }
+
+
+    boton.onclick=function(){
+
+
+        if (favoritos.includes(id)==true){
+            let index=favoritos.indexOf(id)
+            favoritos.splice(index, 1)
+            boton.innerHTML="Agregar a favoritos"
+        }
+        else {
+            favoritos.push(id);
+            boton.innerHTML="Quitar de favoritos"
+        }
+
+        let infoParaStorage=JSON.stringify(favoritos);
+        localStorage.setItem("favoritos", infoParaStorage)
+        console.log(localStorage);
+
+    }
+
 
     //Trailer
 

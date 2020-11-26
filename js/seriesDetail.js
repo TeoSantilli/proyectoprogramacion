@@ -70,6 +70,46 @@ window.addEventListener('load',function(){
         console.log(error);
     })
 
+    //Favoritos
+    let recuperoStorageTv = localStorage.getItem("favoritosTv")
+
+    if (recuperoStorageTv == null ){
+        favoritosTv=[];
+    }
+    else {
+        favoritosTv=JSON.parse(recuperoStorageTv);
+    }
+
+    let boton = document.querySelector(".botonFavoritos")
+
+    if(favoritosTv.includes(id)){
+        boton.innerHTML="Quitar de Favoritos"
+    }
+
+    boton.onclick = function(){
+
+        if(favoritosTv.includes(id)==true){
+            let index = favoritosTv.indexOf(id)
+            favoritosTv.splice(index, 1)
+            boton.innerHTML="Agregar a favoritos"
+        }
+        else{
+            favoritosTv.push(id)
+            boton.innerHTML ="Quitar de favoritos"
+        }
+
+        let infoParaStorageTv = JSON.stringify(favoritosTv)
+        localStorage.setItem("favoritosTv", infoParaStorageTv)
+        console.log(localStorage); 
+    }
+
+   
+
+
+
+
+
+
     
     //Trailer
 

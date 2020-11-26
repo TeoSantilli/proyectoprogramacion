@@ -11,11 +11,14 @@ body{
 }
 
 
+/* Header */
+
 .header{
     width: 100%;
     height: 100px;
     display: block;
     background-color: #101010;
+    position: fixed;
 }
 .innerHeader{
     width: 90%;
@@ -50,104 +53,68 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
-
-
+.bloque{
+    height: 100px;
+    background-color: black;
+}
+/* Contenido */
 .container{
+    margin: 50px;
+}
+.titulo{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.categoria{
+    font-size: 23px;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.peliculas{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    gap: 40px;
     flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 100px;
 }
-.imgPeli{
-    width: 270px;
+.series{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.peliculas h3{
+    width: 250px;
+}
+.peliculas img {
+    width: 250px;
+    height: 375px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 5px;
 }
-.imgPeli img {
-    width: 100%;
+.series h3{
+    width: 250px;
 }
-.imgPeli button{
-    border:rgb(153, 157, 160) solid 2px;
-    border-radius: 5px;
-    background-color: rgb(58, 56, 56);    ;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    height: 30px;
+.series img {
+    width: 250px;
+    height: 375px;
+    border-radius: 15px;
 }
-.tituloPeli{
-    color: rgb(234, 245, 255); 
-    text-decoration: underline; 
-    font-size: 24px;
+.container a  :hover{
+    color:rgb(153, 157, 160);
 }
-.infoContainer{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    font-family: 'Montserrat', sans-serif;
+.peliculas img:hover{
+    opacity: 0.5;
 }
-.info{
-    color: rgb(153, 157, 160);
-    font-size: 14px;
-}
-.info2{
-    color: white;
-}
-.calificacion{
-    color: gold;
-}
-.trailer{
-    display: flex;
-    justify-content: space-around;
-    border: solid grey;
+.series img:hover{
+    opacity: 0.5;
 }
 
 
-.containerReviews{
-    margin-right: 50px;
-    width: 100%;
-    border: grey solid 3px;
-    border-radius: 10px;
-    padding: 10px;
-}
-.reviews{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.reseñas{
-    display: flex;
-    gap: 15px;
-}
-.tituloReviews{
-    color: rgb(153, 157, 160);
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 15px; 
-    text-decoration: underline;
-}
-.reviews img{
-    width: 64px;
-    height: 64px;
-}
-.reviews h3{
-    color: white;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-}
-.reviews span{
-    font-size: 12px;
-}
-
-/*Footer*/
+/* Footer */
 
 .footer{
     width: 100%;
@@ -179,6 +146,8 @@ body{
 
 
 
+/* Responsive */
+
 @media (max-width: 768px){
     /*Header*/
     .header{
@@ -200,27 +169,28 @@ body{
         gap: 10px;
         margin-bottom: 20px;
     }
+    .slider{
+        display: none;
+    }
     .bloque{
         display: none;
     }
     /*Contenido*/
-    .container{
-        flex-direction: column;
-        margin: 0;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    .peliculas h3{
+        width: 200px;
     }
-    .infoContainer{
-        width: 90%;
+    .peliculas img {
+        width: 200px;
+        height: 325px;
+        border-radius: 15px;
     }
-    .trailer{
-        width: 90%;
+    .series h3{
+        width: 200px;
     }
-    .containerReviews{
-        margin-right: 50px;
-        width: 100%;
-        border: none;
-        padding: 0;
+    .series img {
+        width: 200px;
+        height: 325px;
+        border-radius: 15px;
     }
     /*Footer*/
     .footer{
@@ -233,19 +203,19 @@ body{
     .redesSociales{
         margin-bottom: 20px;
     }
+
 }
 
 @media (max-width: 420px){
-    .imgPeli{
-        width: 240px;
+    .peliculas{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 65px;
     }
-    .trailer{
-        width: 100%;
+    .series{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 65px;
     }
-    .containerReviews{
-        margin: 0px;
-    }
-    .tituloReviews{
-        margin-left: 10px;
-    }
+    
 }

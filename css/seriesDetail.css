@@ -228,7 +228,10 @@ body{
         width: 90%;
     }
     .containerReviews{
-        margin-left: 50px;
+        margin-right: 50px;
+        width: 100%;
+        border: none;
+        padding: 0;
     }
     /*Footer*/
     .footer{
@@ -250,4 +253,11 @@ body{
     .trailer{
         width: 100%;
     }
+    .containerReviews{
+        margin: 0px;
+    }
+    .tituloReviews{
+        margin-left: 10px;
+    }
+}
 }
