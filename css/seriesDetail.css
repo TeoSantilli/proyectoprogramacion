@@ -110,6 +110,13 @@ body{
 .info2{
     color: white;
 }
+.info2 a{
+    color: white;
+    text-decoration: none;
+}
+.info2 a:hover{
+    color: rgb(153, 157, 160);
+}
 .calificacion{
     color: gold;
 }
