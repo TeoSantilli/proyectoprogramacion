@@ -11,7 +11,7 @@ window.addEventListener('load', function(){
         return respuesta.json()
     })
     .then(function(sliderUp){
-        
+        console.log(sliderUp.results)
         for(let i = 9 ; i < 13; i++){
             slider.innerHTML += `<li> <img src="https://image.tmdb.org/t/p/original${sliderUp.results[i].backdrop_path}" alt=""> </li>`       
 
