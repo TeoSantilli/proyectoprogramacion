@@ -71,7 +71,8 @@ window.addEventListener('load',function(){
         //console.log(genre);
         detalles.innerHTML +=  `| ${genre.runtime}m`
         genre.genres.forEach(genero1 =>{
-            genero.innerHTML += `${genero1.name} / `
+            genero.innerHTML += `<a href="resultadosGeneros.html?id=${genero1.id}&name=${genero1.name}">${genero1.name}
+            </a> / `
 
         })
         

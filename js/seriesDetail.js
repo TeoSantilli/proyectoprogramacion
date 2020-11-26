@@ -43,7 +43,8 @@ window.addEventListener('load',function(){
         console.log(credits);
         director.innerHTML = `${credits.created_by[0].name}`
         credits.genres.forEach(genre => {
-            generos.innerHTML += ` ${genre.name} /`
+            generos.innerHTML += ` <a href="resultadosGeneros.html?id=${genre.id}&name=${genre.name}">${genre.name}
+            </a> / `
         });
         fecha.innerHTML += `| ${credits.episode_run_time[0]}m `
         
