@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -56,55 +55,31 @@ body{
     background-color: black;
 }
 
-
-
-
-
-.containerGeneros{
-    display: flex;
-    justify-content: space-evenly;
+.container{
     margin: 50px;
-    gap: 15px;
+   
 }
-.containerGeneros div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid grey;
-    width: 310px;
-    border-radius: 10px;
-    padding: 20px;
-}
-.containerGeneros h2{
-    font-size: 25px;
+.tituloGenero{
+    font-size: 27px;
     color: white;
-    font-family: 'Montserrat', sans-serif;;
     margin-bottom: 25px;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
 }
-.generosPelis{
+.peliculas{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-decoration: none;
-    align-items: center;    
+    gap: 40px;
+    flex-wrap: wrap;
 }
-.generosTv{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-decoration: none;
-    align-items: center;    
+.peliculas img {
+    width: 250px;
+    height: 375px;
+    border-radius: 15px;
 }
-.nombresGenero a{
-    color: rgb(141, 136, 136);
-    font-size: 20px;
+.peliculas img:hover{
+    opacity: 0.5;
 }
-.nombresGenero a:hover{
-    color:white;
-}
-
-
-
 
 
 
@@ -142,48 +117,13 @@ body{
 
 
 @media (max-width: 768px){
-    /*Header*/
     .header{
-        height: 180px;
-        position: static;
+        height: 140px;
     }
     .innerHeader{
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
-        
-    }
-    .logo{
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .nav{
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 20px;
-    }
-    .slider{
-        display: none;
-    }
-    .bloque{
-        display: none;
-    }
-
-    .containerGeneros{
-        flex-direction: column;
-        align-items: center;
-    }
-
-      /*Footer*/
-      .footer{
-        height: 140px;
-    }
-    .innerFooter{
-        display: flex;
-        flex-direction: column;
-    }
-    .redesSociales{
-        margin-bottom: 20px;
     }
     
 }

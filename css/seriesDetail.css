@@ -68,6 +68,9 @@ body{
 .imgSerie{
     width: 270px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
 }
 .imgSerie img {
     width: 100%;
@@ -75,6 +78,14 @@ body{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 13px;
+}
+.imgSerie button{
+    border:rgb(153, 157, 160) solid 2px;
+    border-radius: 5px;
+    background-color: rgb(58, 56, 56);    ;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
 }
 .num{
     color: gold;
@@ -105,10 +116,15 @@ body{
 .trailer{
     display: flex;
     justify-content: space-around;
+    border: solid grey;
 }
 
 .containerReviews{
     margin-right: 50px;
+    width: 100%;
+    border: grey solid 3px;
+    border-radius: 10px;
+    padding: 10px;
 }
 .reviews{
     display: flex;
@@ -210,6 +226,9 @@ body{
     }
     .trailer{
         width: 90%;
+    }
+    .containerReviews{
+        margin-left: 50px;
     }
     /*Footer*/
     .footer{

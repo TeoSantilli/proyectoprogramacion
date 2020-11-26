@@ -27,7 +27,7 @@ window.addEventListener('load',function(){
     //Detalles
 
     title.innerHTML = `Ver ${titulo}`
-    imgSerie.innerHTML = `<img src='https://image.tmdb.org/t/p/w500${imagen}' alt ='${titulo}'/>`
+    imgSerie.innerHTML += `<img src='https://image.tmdb.org/t/p/w500${imagen}' alt ='${titulo}'/>`
     tituloSerie.innerHTML = `${titulo}`
     calificacion.innerHTML = `${rating}`
     fecha.innerHTML = `${fechaAire}`

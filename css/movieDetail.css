@@ -66,11 +66,21 @@ body{
 .imgPeli{
     width: 270px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
 }
 .imgPeli img {
     width: 100%;
 }
-
+.imgPeli button{
+    border:rgb(153, 157, 160) solid 2px;
+    border-radius: 5px;
+    background-color: rgb(58, 56, 56);    ;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+}
 .tituloPeli{
     color: rgb(234, 245, 255); 
     text-decoration: underline; 
@@ -97,11 +107,16 @@ body{
 .trailer{
     display: flex;
     justify-content: space-around;
+    border: solid grey;
 }
 
 
 .containerReviews{
     margin-right: 50px;
+    width: 100%;
+    border: grey solid 3px;
+    border-radius: 10px;
+    padding: 10px;
 }
 .reviews{
     display: flex;
@@ -116,7 +131,8 @@ body{
     color: rgb(153, 157, 160);
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 10px; 
+    margin-bottom: 15px; 
+    text-decoration: underline;
 }
 .reviews img{
     width: 64px;

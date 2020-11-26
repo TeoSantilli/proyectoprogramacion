@@ -16,13 +16,12 @@ window.addEventListener('load',function(){
         });
 
     })
-
-    //Peliculas pagina 2
-
-
     .catch(function(error){
         console.log(error);
     })
+    
+    //Peliculas pagina 2
+
     fetch('https://api.themoviedb.org/3/discover/movie?api_key=070e5651f364e262a772d24963f099f2&language=en-US&sort_by=vote_count.desc&include_adult=false&include_video=false&page=2')
     .then(function(respuesta){
         return respuesta.json()

@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
     //Detalles
 
     title.innerHTML = `Ver ${titulo}`
-    imgPeli.innerHTML = `<img src='https://image.tmdb.org/t/p/w500${imagen}' alt ='${titulo}'/>`
+    imgPeli.innerHTML += `<img src='https://image.tmdb.org/t/p/w500${imagen}' alt ='${titulo}'/>`
     tituloPeli.innerHTML = `${titulo}`
     detalles.innerHTML =  `${fecha} `
     overview.innerHTML = `${descrip}`
@@ -110,7 +110,7 @@ window.addEventListener('load',function(){
             console.log(reseña.author_details.avatar_path);
             review.innerHTML += `<div class="reseñas">
             <img src='https://image.tmdb.org/t/p/original${reseña.author_details.avatar_path}' alt ='avatar no disponible'/>
-            <h3 class="autor">${reseña.author} <br> <span class="contenido">${reseña.content}</span></h3>
+            <h3>${reseña.author} <br> <span>${reseña.content}</span></h3>
             </div>
             `
         })
